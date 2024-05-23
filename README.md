@@ -49,12 +49,8 @@ checkCart(allItems = [new Item("Item1", "0234567891", 50, 0)], payment = 100) в
 ![image](https://github.com/Andrea-444/SI_2024_lab2_226001/assets/139055617/075dcbc3-9e81-404a-b5af-bea778ec8175)
 
 5. 
-Format: Combination TestCase Branch
+![image](https://github.com/Andrea-444/SI_2024_lab2_226001/assets/139055617/cd824271-f3f0-46c9-a9fb-0d900213ebc3)
 
-TTT    checkCart(allItems = [new Item("Item1", "0234567891", 500, 0.5)], payment = 100) 	  21->22
-TTF    checkCart(allItems = [new Item("Item1", "1234567890", 500, 0.5)], payment = 100)	  21->5.3
-TFX	 checkCart(allItems = [new Item("Item1", "0234567891", 500, 0)], payment = 100)		  21->5.3
-FXX	 checkCart(allItems = [new Item("Item1", "0234567891", 200, 0.5)], payment = 100)	  21->5.3
 
 
 
