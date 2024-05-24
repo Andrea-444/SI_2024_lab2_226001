@@ -1,8 +1,7 @@
 Andrea Stevanoska 226001
 ---------------------------------------------
 
-2. За дадениот код во функцијата function нацртајте Control Flow Graph со некоја 
-   алатка за цртање дијаграми. Внесете го нацртанот CFG во документацијата.
+2. Control Flow Graph
   
 ![broj-regioni-i-predikatni-jazli](https://github.com/Andrea-444/SI_2024_lab2_226001/assets/139055617/d4de2c1a-860a-483c-ae28-cdb8f4c89e66)
 
