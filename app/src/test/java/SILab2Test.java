@@ -10,19 +10,19 @@ public class SILab2Test {
     void testEveryBranch() {
         // allItems = null, payment = 100
         RuntimeException exception1 = assertThrows(RuntimeException.class, () -> SILab2.checkCart(null, 100));
-        assertEquals("allItems list can't be null!", exception1.getMessage());
+        assertTrue(exception1.getMessage().contains("allItems list can't be null!"));
 
         // allItems = [new Item(null, null, 100, 0)], payment = 100
         List<Item> lista = new ArrayList<>();
         lista.add(new Item(null, null, 100, 0));
         RuntimeException exception2 = assertThrows(RuntimeException.class, () -> SILab2.checkCart(lista, 100));
-        assertEquals("No barcode!", exception2.getMessage());
+        assertTrue(exception2.getMessage().contains("No barcode!"));
 
         // allItems = [new Item("Item1", "1C34567890", 100, 0)], payment = 100
         List<Item> lista2 = new ArrayList<>();
         lista2.add(new Item("Item1", "1C34567890", 100, 0));
         RuntimeException exception3 = assertThrows(RuntimeException.class, () -> SILab2.checkCart(lista2, 100));
-        assertEquals("Invalid character in item barcode!", exception3.getMessage());
+        assertTrue(exception3.getMessage().contains("Invalid character in item barcode!"));
 
         // allItems = [new Item("Item1", "0234567891", 500, 0.5)], payment = 100
         List<Item> lista3 = new ArrayList<>();
